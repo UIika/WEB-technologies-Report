@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>lab5</title>
+    <link rel="stylesheet" href="lab5.css">
+</head>
+<body>
+    <h1>Лабораторна робота №5</h1>
+
+    <h2>3 варіант</h2>
+
+    <h2>Тема</h2>
+    <p>
+        ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. 
+        ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
+    </p>
+    <h2>Мета</h2>
+    <p>
+        придбати практичні навички роботи з масивами у js-сценаріях.  Реалізація програм засовами мови JAVASCRIPT
+    </p>
+    <h2>Масиви (4 пункт)</h2>
+
+    <label for="arrayInput">Введіть масив A (розділіть числа комою):</label>
+    <input type="text" id="arrayInput">
+    <button onclick="processArray()">Обробити масив</button>
+    <br>
+
+    <h3>Результати:</h3>
+    <div id="results">
+        <p><strong>Вхідний масив A:</strong></p>
+        <div id="inputArrayA"></div>
+
+        <p><strong>Вихідний масив B:</strong></p>
+        <div id="outputArrayB"></div>
+
+        <p><strong>Відсортований вихідний масив B за зменшенням:</strong></p>
+        <div id="sortedArrayB"></div>
+    </div>
+
+    <h3>Програмний код</h3>
+
+    <pre>
+    function processArray() {
+        const arrayInput = document.getElementById("arrayInput").value;
+        let arrayA = arrayInput.split(',').map(num => parseFloat(num.trim()));
+    
+        if (arrayA.some(isNaN)) {
+            alert("Переконайтеся, що всі введені значення є числами та розділені комами.");
+            return;
+        }
+    
+        document.getElementById("inputArrayA").textContent = arrayA.join(", ");
+    
+        const maxElement = Math.max(...arrayA);
+        const arrayB = arrayA.map(a => maxElement * a);
+    
+        document.getElementById("outputArrayB").textContent = arrayB.join(", ");
+    
+        insertionSortDescending(arrayB);
+        document.getElementById("sortedArrayB").textContent = arrayB.join(", ");
+    }
+    
+    function insertionSortDescending(array) {
+        for (let i = 1; i < array.length; i++) {
+            let key = array[i];
+            let j = i - 1;
+    
+            while (j >= 0 && array[j] < key) {
+                array[j + 1] = array[j];
+                j--;
+            }
+            array[j + 1] = key;
+        }
+        return array;
+    }</pre>
+
+
+    <h2>Виконання 6 пункту</h2>
+
+    <div class="calculator">
+        <div id="display" class="display"></div>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="calculate('%')">%</button>
+            <button onclick="calculate('^')">^</button>
+            <button onclick="calculate('√')">√</button>
+            <button onclick="calculate('/')">/</button>
+            <button onclick="inputDigit('7')">7</button>
+            <button onclick="inputDigit('8')">8</button>
+            <button onclick="inputDigit('9')">9</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="inputDigit('4')">4</button>
+            <button onclick="inputDigit('5')">5</button>
+            <button onclick="inputDigit('6')">6</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="inputDigit('1')">1</button>
+            <button onclick="inputDigit('2')">2</button>
+            <button onclick="inputDigit('3')">3</button>
+            <button onclick="calculate('+')">+</button>
+            <button onclick="inputDigit('0')">0</button>
+            <button onclick="inputDigit('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <h3>Програмний код</h3>
+
+    <pre>
+    const display = document.getElementById('display');
+
+    function inputDigit(digit) {
+        display.innerText += digit;
+    }
+
+    function clearDisplay() {
+        display.innerText = '';
+    }
+
+    function calculate(operation) {
+        if (operation === '√') {
+            const currentValue = parseFloat(display.innerText);
+            display.innerText = Math.sqrt(currentValue);
+        } else {
+            display.innerText += operation;
+        }
+    }
+
+    function calculateResult() {
+        let expression = display.innerText;
+
+        expression = expression.replace(/\^/g, '**');
+        
+        try {
+            const result = eval(expression);
+            display.innerText = result;
+        } catch (error) {
+            display.innerText = 'Error';
+        }
+    }</pre>
+
+    <h2>Висновки</h2>
+    Під час роботи з масивами у JavaScript я здобув практичні навички обробки та
+    маніпулювання даними. Використання методів масивів дозволило оптимізувати код і
+    підвищити ефективність обробки даних. Ці навички допомагають покращити якість
+    та продуктивність розробки програм у JavaScript.
+    <script src="lab5.js"></script>
+</body>
+</html>
