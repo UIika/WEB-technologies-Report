@@ -1,32 +1,2325 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Звіти лабораторних робіт</title>
-</head>
-<body>
+<html lang="uk">
 
-    <h1>Звіти лабораторних робіт з дисципліни «WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.
-        ОСНОВИ FRONTEND Й BACKEND РОЗРОБОК</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lab5.css">
+        <title>Звіти з лабораторних робіт</title>
+        <style type="text/css">
+            .tg{border:none;border-collapse:collapse;border-spacing:0;}
+            .tg td{border-width:0px;overflow:hidden;text-align:center;vertical-align:middle;height:20px;}
+            .tg-yellow{background-color:#ffad08;}
+            .tg-blue{background-color:#3531ff;}
+            .tg-red{background-color:#fe0000;}
+            .tg-white{background-color:#ffffff;}
+        </style>
+    </head>
 
-    <h2>
-        
-    </h2>
+    <body>
+        <div class="container">
+            <h1 class="title">Звіти з лабораторних робіт з дисципліни
+                "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ ОСНОВИ FRONTEND ТА BACKEND
+                РОЗРОБОК"</h1>
+            <div class="student-info">
+                <img src="img\photo.jpeg" alt="Фото студента" height="100px">
+                <p>Студент гр. № ІО-14 Риндя Ілля Андрійович</p>
+            </div>
+            <div class="lab-nav">
+                <div class="lab-info" onclick="showLab(1)">ЛР №1</div>
+                <div class="lab-info" onclick="showLab(2)">ЛР №2</div>
+                <div class="lab-info" onclick="showLab(3)">ЛР №3</div>
+                <div class="lab-info" onclick="showLab(4)">ЛР №4</div>
+                <div class="lab-info" onclick="showLab(5)">ЛР №5</div>
+                <div class="lab-info" onclick="showLab(6)">ЛР №6</div>
+                <div class="lab-info" onclick="showLab(7)">ЛР №7</div>
+                <div class="lab-info" onclick="showLab(8)">ЛР №8</div>
+                <div class="lab-info" onclick="showLab(9)">ЛР №9</div>
+            </div>
+            <div class="lab-content">
+                <div class="lab-block" id="lab1">
+                    <h2>Лабораторна робота 1</h2>
+                    <div class="ellipse" onclick="showInfo(1,1)">
+                        <p>Опис предметного середовища</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(1,2)">
+                        <p>Тема, мета ЛР, Місце розташування сайту</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(1,3)">
+                        <p>Структура документа</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(1,4)">
+                        <p>Висновки</p>
+                    </div>
+
+                </div>
+                <div class="lab-block" id="lab2">
+                    <h2>Лабораторна робота 2</h2>
+                    <div class="ellipse" onclick="showInfo(2,1)">
+                        <p>Тема, мета ЛР, Місце розташування сайту</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(2,2)">
+                        <p>Способи підключення стилів</p>
+                    </div>
+                    <div class="ellipse" onclick="showSubsection(1)">
+                        <p>Селектори</p>
+                    </div>
+                    <div class="subsection" id="subsection1">
+                        <div class="ellipse-small" onclick="showInfo(2,3)">
+                            <p>Селектори тегу</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(2,4)">
+                            <p>Селектори класу</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(2,5)">
+                            <p>Селектори ідентифікаторів</p>
+                        </div>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(2,6)">
+                        <p>CSS: Шрифти Текст Таблиці Фон Контур</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(2,7)">
+                        <p>Висновки</p>
+                    </div>
+                </div>
+                <div class="lab-block" id="lab3">
+                    <h2>Лабораторна робота 3</h2>
+                    <div class="ellipse" onclick="showInfo(3,1)">
+                        <p>Тема, мета ЛР, Місце розташування сайту</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(3,2)">
+                        <p>Завдання 1</p>
+                    </div>
+                    <div class="ellipse" onclick="showSubsection(2)">
+                        <p>Завдання 2</p>
+                    </div>
+                    <div class="subsection" id="subsection2">
+                        <div class="ellipse-small" onclick="showInfo(3,3)">
+                            <p>Завдання 2: Фіксована таблична верстка</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(3,4)">
+                            <p>Завдання 2: Гумова таблична верстка</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(3,5)">
+                            <p>Завдання 2: Фіксована блокова верстка</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(3,6)">
+                            <p>Завдання 2: Гумова блокова верстка</p>
+                        </div>
+                    </div>
+
+                    <div class="ellipse" onclick="showSubsection(3)">
+                        <p>Завдання 3: FLEXBOX</p>
+                    </div>
+                    <div class="subsection" id="subsection3">
+                        <div class="ellipse-small" onclick="showInfo(3,7)">
+                            <p>Завдання 3: Зовнішній вигляд сторінки</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(3,8)">
+                            <p>Завдання 3: HTML</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(3,9)">
+                            <p>Завдання 3: CSS</p>
+                        </div>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(3,10)">
+                        <p>Висновки</p>
+                    </div>
+                </div>
+                <div class="lab-block" id="lab4">
+                    <h2>Лабораторна робота 4</h2>
+                    <div class="ellipse" onclick="showInfo(4,1)">
+                        <p>Тема, мета ЛР, Місце розташування сайту</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(4,2)">
+                        <p>Адаптивна верстка</p>
+                    </div>
+                    <div class="ellipse" onclick="showSubsection(4)">
+                        <p>Завдання: адаптивна верстка</p>
+                    </div>
+                    <div class="subsection" id="subsection4">
+                        <div class="ellipse-small" onclick="showInfo(4,3)">
+                            <p>Десктопна версія</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(4,4)">
+                            <p>Планшетна версія</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(4,5)">
+                            <p>Мобільна версія</p>
+                        </div>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(4,6)">
+                        <p>Висновки</p>
+                    </div>
+                </div>
+                <div class="lab-block" id="lab5">
+                    <h2>Лабораторна робота 5</h2>
+                    <div class="ellipse" onclick="showInfo(5,1)">
+                        <p>Постановка Задачі</p>
+                    </div>
+                    <div class="ellipse" onclick="showSubsection(5)">
+                        <p>Способи функціонального застосування JavaScript</p>
+                    </div>
+                    <div class="subsection" id="subsection5">
+                        <div class="ellipse-small" onclick="showInfo(5,2)">
+                            <p>Схема URL</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(5,3)">
+                            <p>Обробник подій</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(5,4)">
+                            <p>Підстанова(entity)</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(5,5)">
+                            <p>Вставка</p>
+                        </div>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(5,6)">
+                        <p>МАСИВИ</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(5,7)">
+                        <p>Виконання 6 пункту</p>
+                    </div>
+                    <div class="ellipse" onclick="showSubsection(6)">
+                        <p>5.1</p>
+                    </div>
+                    <div class="subsection" id="subsection6">
+                        <div class="ellipse-small" onclick="showInfo(5,8)">
+                            <p>1</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(5,9)">
+                            <p>3</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(5,10)">
+                            <p>5</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(5,11)">
+                            <p>7</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(5,12)">
+                            <p>9</p>
+                        </div>
+                        <div class="ellipse-small" onclick="showInfo(5,13)">
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(5,14)">
+                        <p>ВИСНОВКИ</p>
+                    </div>
+                </div>
+                <div class="lab-block" id="lab6">
+                    <h2>Лабораторна робота 6</h2>
+                    <div class="ellipse" onclick="showInfo(6,1)">
+                        <p>Постановка Задачі</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(6,2)">
+                        <p>Завдання 1</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(6,3)">
+                        <p>Завдання 3</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(6,4)">
+                        <p>Завдання 5</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(6,5)">
+                        <p>Завдання 7</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(6,6)">
+                        <p>Завдання 8</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(6,7)">
+                        <p>Завдання 9</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(6,8)">
+                        <p>Завдання 10</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(6,9)">
+                        <p>ВИСНОВКИ</p>
+                    </div>
+                </div>
+                <div class="lab-block" id="lab7">
+                    <h2>Лабораторна робота 7</h2>
+                    <div class="ellipse" onclick="showInfo(7,1)">
+                        <p>Постановка задачі</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(7,2)">
+                        <p>Хід роботи</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(7,3)">
+                        <p>ВИСНОВКИ</p>
+                    </div>
+                </div>
+                <div class="lab-block" id="lab8">
+                    <h2>Лабораторна робота 8</h2>
+                    <div class="ellipse" onclick="showInfo(8,1)">
+                        <p>Сертефікат, бали</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(8,2)">
+                        <p>Тест 1</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(8,3)">
+                        <p>Тест 2</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(8,4)">
+                        <p>Тест 3</p>
+                    </div>
+                </div>
+                <div class="lab-block" id="lab9">
+                    <h2>Лабораторна робота 9</h2>
+                    <div class="ellipse" onclick="showInfo(9,1)">
+                        <p>Сертефікат, бали</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(9,2)">
+                        <p>Тест 1</p>
+                    </div>
+                    <div class="ellipse" onclick="showInfo(9,3)">
+                        <p>Тест 2</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="info-block" id="info1-1">
+                        <h3>Предметне середовище: <span>Веб-додаток для перегляду розкладу
+                            телепрограм різних телеканалів.</span></h3>
+                    </div>
+                    <div class="info-block" id="info1-2">
+                        <h3>Тема: <span>СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР
+                                ПРЕДМЕТНОЇ ГАЛУЗІ.
+                                РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ,
+                                СПИСКАМИ в
+                                HTML-ДОКУМЕНТІ.</span></h3>
+                        <h3>Мета:
+                            <span>придбати практичні навички роботи з
+                                HTML-документом, таблицями, ,
+                                зображеннями, посиланнями, списками, формами
+                                Створити шаблон звітного HTML-документом для
+                                відображення
+                                результатів роботи всіх лабораторних
+                                робіт.
+                            </span>
+                        </h3>
+                        <h3>Звітній документу:
+                            <span>
+                                <a href="https://github.com/UIika/WEB-technologies-Report">
+                                    https://github.com/UIika/WEB-technologies-Report
+                                </a>
+                            </span>
+                        </h3>
+                        <h3>Репозиторій звітнього документу:
+                            <span>
+                                <a href="https://github.com/UIika/WEB-technologies-Report">
+                                    https://github.com/UIika/WEB-technologies-Report
+                                </a>
+                            </span>
+                        </h3>
+                        <h3>Веб-додаток:
+                            <span>
+                                <a href="https://uiika.github.io/WEB-technologies-App/">
+                                    https://uiika.github.io/WEB-technologies-App/
+                                </a>
+                            </span>
+                        </h3>
+                        <h3>Репозиторій веб-додатку:
+                            <span>
+                                <a href="https://github.com/UIika/WEB-technologies-App">
+                                    https://github.com/UIika/WEB-technologies-App
+                                </a>
+                            </span>
+                        </h3>
+                        <h3>Резюме:
+                            <span>
+                                <a href="https://uiika.github.io/WEB-technologies-CV/">
+                                    https://uiika.github.io/WEB-technologies-CV/
+                                </a>
+                            </span>
+                        </h3>
+                        <h3>Репозиторій резюме:
+                            <span>
+                                <a href="https://github.com/UIika/WEB-technologies-CV">
+                                    https://github.com/UIika/WEB-technologies-CV
+                                </a>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="info-block" id="info1-3">
+                        <h3>Структура html документа</h3>
+                        <ol>
+                            <li>
+                                HTML-код таблиць:
+                                <pre>
+&lt;table>
+    &lt;tbody>
+        &lt;tr>
+            &lt;td>09:00&lt;/td>
+            &lt;td>Класична музика&lt;/td>
+            &lt;/tr>
+        &lt;tr>
+            &lt;td>10:00&lt;/td>
+            &lt;td>Документальний фільм "Світ мистецтва"&lt;/td>
+            &lt;/tr>
+        &lt;tr>
+            &lt;td>11:00&lt;/td>
+            &lt;td>Вистава "Шекспір у театрі"&lt;/td>
+            &lt;/tr>
+        &lt;tr>
+            &lt;td>13:00&lt;/td>
+            &lt;td>Опера "Кармен"&lt;/td>
+            &lt;/tr>
+        &lt;tr>
+            &lt;td>15:00&lt;/td>
+            &lt;td>Інтерв'ю з митцями&lt;/td>
+            &lt;/tr>
+    &lt;/tbody>
+&lt;/table>
+                                </pre>
+                            </li>
+                            <li>
+                                HTML-код форми:
+                                <pre>
+&lt;form action="/submit_form" method="POST">
+    &lt;div class="form-group">
+        &lt;label for="name">Ім'я:&lt;/label>
+        &lt;input type="text" id="name" name="name" required>
+        &lt;/div>
+    &lt;div class="form-group">
+        &lt;label for="email">Електронна пошта:&lt;/label>
+        &lt;input type="email" id="email" name="email" required>
+        &lt;/div>
+    &lt;div class="form-group">
+        &lt;label for="message">Повідомлення:&lt;/label>
+        &lt;textarea id="message" name="message" rows="4" required>&lt;/textarea>
+        &lt;/div>
+    &lt;button type="submit">Надіслати&lt;/button>
+&lt;/form>
+                              </pre>
+                            </li>
+                            <li>
+                                Зображення:
+                                <pre>
+&lt;img src="img/facebook.png" alt="Facebook" width="25"&gt;
+&lt;img src="img/instagram.png" alt="Instagram" width="25"&gt;
+&lt;img src="img/telegram.png" alt="Telegram" width="25"&gt;
+                                </pre>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="info-block" id="info1-4">
+                        <h3>Висновок: <span>В ході виконання роботи було успішно придбано практичні навички
+                            роботи з HTML-документами, таблицями, зображеннями, посиланнями, списками та формами.
+                            Також було створено шаблон звітного HTML-документа для відображення результатів
+                            всіх лабораторних робіт.</span></h3>
+                    </div>
+                    <div class="info-block" id="info2-1">
+                        <h3>Тема: <span>КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ
+                                .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ
+                                ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В
+                                HTML-ДОКУМЕНТАХ.</span></h3>
+                        <h3>Мета: <span>придбати практичні навички роботи з
+                                селекторами, ідентифікаторами,
+                                списками, різноманітними властивостями кольору і
+                                фону, зовнішними та
+                                внутрішними відступами, плаваючими елементами,
+                                оформленням текстових
+                                елементів</span>
+                        </h3>
+                    </div>
+                    <div class="info-block" id="info2-2">
+                        <h3>Способи підключення стилів</h3>
+                        <p>Для веб-сторінки можна використовувати різні методи підключення стилів:
+
+                            Вбудований CSS: Використовуючи тег style в секції head HTML-документа,
+                            можна безпосередньо вбудувати стилі.
+                            
+                            Зовнішній CSS: Стилі можна розташувати в окремому файлі CSS з розширенням .css
+                            і підключити його до HTML-сторінки за допомогою тегу link.
+                            
+                            Inline CSS: За допомогою атрибуту style можна задати стилі прямо в тегах HTML.</p>
+                    </div>
+                    <div class="info-block" id="info2-3">
+
+                            <h4>Селектор тегу</h4>
+                            <p>
+                                <pre>
+input, textarea {
+    width: 310px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+                                </pre>
+                            </p>
+                            <img src="img/21.png" alt="Селектор тегу" height="200px">
+                    </div>
+                    <div class="info-block" id="info2-4">
+                        
+                            <h4>Селектор класу</h4>
+                            <p>
+                                <pre>
+.channel-grid {
+    display: grid;
+    gap: 10px;
+}
+                                </pre>
+                            </p>
+                            <img src="img/22.png" alt="Селектор тегу" height="300px">
+                    </div>
+                    <div class="info-block" id="info2-5">
+                        
+                            <h4>Селектор ідентифікатора</h4>
+                            <p>
+                                <pre>
+#channel-logo{
+    width: 18px;
+    margin-right: 5px;
+}
+                                </pre>
+                            </p>
+                            <img src="img/23.png" alt="Селектор тегу" height="100px">
+                        
+                    </div>
+
+                    <div class="info-block" id="info2-6">
+                        <h3>Шрифти:</h3>
+                        <pre>
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+                        </pre>
+                        <h3>Контури:</h3>
+                        <pre>
+table, th, td {
+    border: 1px solid #ccc;
+}
+                        </pre>
+                        <h3>Фон:</h3>
+                        <pre>
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+                        </pre>
+                        <h3>Для таблиць:</h3>
+                        <pre>
+table {
+    width: 100%;
+    height: 80%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+td:first-child {
+    width: 7%;
+    text-align: left;
+}
+
+th, td {
+    padding: 8px;
+}
+                        </pre>
+                    </div>
+                    <div class="info-block" id="info2-7">
+                        <h3>Висновок: <span>В результаті виконання роботи були успішно придбані практичні
+                            навички роботи з селекторами, ідентифікаторами, списками, різноманітними
+                            властивостями кольору і фону. Було вивчено роботу з зовнішними
+                            та внутрішними відступами, плаваючими елементами, а
+                            також оформленням текстових елементів.</span></h3>
+                    </div>
+
+                    <div class="info-block" id="info3-1">
+                        <h3>Тема: <span>ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА.
+                                ВЕРСТКА
+                                ЗАСОБАМИ CSS та FLEXBOX.</span></h3>
+                        <h3>Мета: <span><br>⎯ придбати практичні навички роботи
+                                верстки сторінок засобами CSS, верстки на
+                                основі плаваючих елементів, з’ясувати переваги
+                                та недоліки типів макетів веб-
+                                сторінок
+                                <br>⎯ придбати практичні навички роботи верстки
+                                сторінок засобами CSS та FLEXBOX</span></h3>
+                        <h3>Сайт з 3 завдання: <span>
+                            <a href="https://uiika.github.io/WEB-technologies-lab3task3/">
+                                https://uiika.github.io/WEB-technologies-lab3task3/
+                            </a></span>
+                        </h3>
+                        <h3>Репозиторій 3 завдання: <span>
+                            <a href="https://github.com/UIika/WEB-technologies-lab3task3">
+                                https://github.com/UIika/WEB-technologies-lab3task3
+                            </a></span>
+                        </h3>
+                    </div>
+                    <div class="info-block" id="info3-2">
+                        <h3>Зовнішній вигляд макету</h3>
+                        <p>
+                            Цей код використовує блочну модель CSS для стилізації та розміщення елементів.
+                            Кожен блок каналу, таблиця програм, заголовки та інші елементи можуть бути стилізовані
+                            та розміщені за допомогою CSS.
+                        </p>
+                        <img src="./img/31.png" alt="app_main" width="80%">
+                        <h3>Код макету:</h3>
+                        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Телепрограма&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Телепрограма&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#channels"&gt;Канали&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section id="channels"&gt;
+            &lt;div class="channel-grid"&gt;
+                &lt;div class="channel"&gt;
+                    &lt;h3&gt;&lt;img src="img/purple.png" id="channel-logo"&gt;Культура&lt;/h3&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;09:00&lt;/td&gt;
+                                &lt;td&gt;Класична музика&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;10:00&lt;/td&gt;
+                                &lt;td&gt;Документальний фільм "Світ мистецтва"&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;11:00&lt;/td&gt;
+                                &lt;td&gt;Вистава "Шекспір у театрі"&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;13:00&lt;/td&gt;
+                                &lt;td&gt;Опера "Кармен"&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;15:00&lt;/td&gt;
+                                &lt;td&gt;Інтерв'ю з митцями&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+
+                &lt;div class="channel"&gt;
+                    &lt;h3&gt;&lt;img src="img/indigo.png" id="channel-logo"&gt;Наука і техніка&lt;/h3&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;08:00&lt;/td&gt;
+                                &lt;td&gt;Світанок науки&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;09:00&lt;/td&gt;
+                                &lt;td&gt;Новітні технології&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;10:00&lt;/td&gt;
+                                &lt;td&gt;Астрономічні відкриття&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;12:00&lt;/td&gt;
+                                &lt;td&gt;Науковий експеримент&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;14:00&lt;/td&gt;
+                                &lt;td&gt;Технології майбутнього&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+
+                &lt;div class="channel"&gt;
+                    &lt;h3&gt;&lt;img src="img/green.png" id="channel-logo"&gt;Сім'я&lt;/h3&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;09:00&lt;/td&gt;
+                                &lt;td&gt;Кулінарні секрети&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;10:00&lt;/td&gt;
+                                &lt;td&gt;Майстер-клас з декору&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;11:00&lt;/td&gt;
+                                &lt;td&gt;Догляд за домашніми рослинами&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;13:00&lt;/td&gt;
+                                &lt;td&gt;Здорове харчування&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;15:00&lt;/td&gt;
+                                &lt;td&gt;Сімейний кінотеатр&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+
+                &lt;div class="channel"&gt;
+                    &lt;h3&gt;&lt;img src="img/red.png" id="channel-logo"&gt;Спорт ТВ&lt;/h3&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;07:00&lt;/td&gt;
+                                &lt;td&gt;Ранкова зарядка&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;08:00&lt;/td&gt;
+                                &lt;td&gt;Тенісний матч&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;10:00&lt;/td&gt;
+                                &lt;td&gt;Спортивні новини&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;12:00&lt;/td&gt;
+                                &lt;td&gt;Футбольний турнір&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;15:00&lt;/td&gt;
+                                &lt;td&gt;Баскетбольний матч&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+
+                &lt;div class="channel"&gt;
+                    &lt;h3&gt;&lt;img src="img/brown.png" id="channel-logo"&gt;Новини світу&lt;/h3&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;06:00&lt;/td&gt;
+                                &lt;td&gt;Ранкові новини&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;08:00&lt;/td&gt;
+                                &lt;td&gt;Світові новини&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;12:00&lt;/td&gt;
+                                &lt;td&gt;Новини економіки&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;14:00&lt;/td&gt;
+                                &lt;td&gt;Новини культури&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;16:00&lt;/td&gt;
+                                &lt;td&gt;Спортивні новини&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+                &lt;div class="channel"&gt;
+                    &lt;h3&gt;&lt;img src="img/orange.png" id="channel-logo"&gt;Мандрівки&lt;/h3&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;08:00&lt;/td&gt;
+                                &lt;td&gt;Програма "Світ мандрівок"&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;10:00&lt;/td&gt;
+                                &lt;td&gt;Документальний фільм "Подорожі Європою"&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;12:00&lt;/td&gt;
+                                &lt;td&gt;Показ культурних звичаїв&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;14:00&lt;/td&gt;
+                                &lt;td&gt;Мандрівки екзотичними країнами&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;16:00&lt;/td&gt;
+                                &lt;td&gt;Кулінарний тур "Смак світу"&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section id="contact"&gt;
+            &lt;h2&gt;Контакти&lt;/h2&gt;
+            &lt;p&gt;Якщо у вас є запитання або пропозиції, заповніть цю форму:&lt;/p&gt;
+            &lt;form action="/submit_form" method="POST"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label for="name"&gt;Ім'я:&lt;/label&gt;
+                    &lt;input type="text" id="name" name="name" required&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label for="email"&gt;Електронна пошта:&lt;/label&gt;
+                    &lt;input type="email" id="email" name="email" required&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label for="message"&gt;Повідомлення:&lt;/label&gt;
+                    &lt;textarea id="message" name="message" rows="4" required&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+                &lt;button type="submit"&gt;Надіслати&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 Телепрограма. Всі права захищені.&lt;/p&gt;
+        &lt;p&gt;Для додаткової інформації, відвідайте наші соц-мережі&lt;/a&gt;.&lt;/p&gt;
+        &lt;ul class="social-media"&gt;
+            &lt;li&gt;&lt;a href="https://www.facebook.com" target="_blank" title="Facebook"&gt;&lt;img src="img/facebook.png" alt="Facebook"&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="https://www.instagram.com" target="_blank" title="Instagram"&gt;&lt;img src="img/instagram.png" alt="Instagram"&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="https://web.telegram.org/a/" target="_blank" title="Telegram"&gt;&lt;img src="img/telegram.png" alt="Telegram"&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;                            
+                        </pre>
+                    </div>
+                    <div class="info-block" id="info3-3">
+                        <h3>Фіксована таблична верстка</h3>
+                            <table class="tg" width="400px">
+                            <tbody>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow">1</td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-red" colspan="7"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue">2</td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white" colspan="3" rowspan="3">3</td>
+                                <td class="tg-white"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue">4</td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-red" colspan="3"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow">5</td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                            </tbody>
+                        </table>                         
+                    </div>
+                    <div class="info-block" id="info3-4">
+                        <h3>Гумова таблична верстка</h3>
+                        <table class="tg" width="100%" align="center">
+                            <tbody>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow">1</td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-red" colspan="7"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue">2</td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white" colspan="3" rowspan="3">3</td>
+                                <td class="tg-white"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue">4</td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-red" colspan="3"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-blue"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                                <td class="tg-white"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow">5</td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                              <tr>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                                <td class="tg-yellow"></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="info-block" id="info3-5">
+                        <h3>Фіксована блочна верстка</h3>
+                        <div style="width: 300px; height: 600px; text-align: center;">
+                            <div style="height: 15%; background-color:#ffad08; display: flex; align-items: center;">
+                                <div style="width: 35%; height: 35%; background-color:white; margin-left: 15%"></div>
+                                <div style="width: 35%; height: 35%; background-color:#ffad08; margin-left: 15%">1</div>
+                            </div>
+                            <div style="display: flex; height: 70%;">
+                                <div style="width: 30%; background-color:#3531ff; display: flex; justify-content: center; align-items: center;">2</div>
+                                <div style="width: 70%; display: flex; justify-content:space-evenly; padding-top: 5%; padding-bottom: 5%;">
+                                    <div style="width: 40%; height: 100%;">
+                                        <div style="height:90%; display: flex; justify-content: center; align-items: center;">3</div>
+                                        <div style="height:10%; background-color: red"></div>
+                                    </div>
+                                    <div style="width: 40%; height: 100%; background-color:#3531ff; display: flex; justify-content: center; align-items: center;">4</div>
+                                </div>
+                            </div>
+                            <div style="height: 15%; background-color:#ffad08; display: flex; justify-content: center; align-items: center;">5</div>
+                        </div>                        
+                    </div>
+                    <div class="info-block" id="info3-6">
+                        <h3>Гумова блочна верстка</h3>
+                        <div style="width: 100%; height: 600px; text-align: center;">
+                            <div style="height: 15%; background-color:#ffad08; display: flex; align-items: center;">
+                                <div style="width: 35%; height: 35%; background-color:white; margin-left: 15%"></div>
+                                <div style="width: 35%; height: 35%; background-color:#ffad08; margin-left: 15%">1</div>
+                            </div>
+                            <div style="display: flex; height: 70%;">
+                                <div style="width: 30%; background-color:#3531ff; display: flex; justify-content: center; align-items: center;">2</div>
+                                <div style="width: 70%; display: flex; justify-content:space-evenly; padding-top: 5%; padding-bottom: 5%;">
+                                    <div style="width: 40%; height: 100%;">
+                                        <div style="height:90%; display: flex; justify-content: center; align-items: center;">3</div>
+                                        <div style="height:10%; background-color: red"></div>
+                                    </div>
+                                    <div style="width: 40%; height: 100%; background-color:#3531ff; display: flex; justify-content: center; align-items: center;">4</div>
+                                </div>
+                            </div>
+                            <div style="height: 15%; background-color:#ffad08; display: flex; justify-content: center; align-items: center;">5</div>
+                        </div>
+                    </div>
+                    <div class="info-block" id="info3-7">
+                        <h3>Вигляд сторінки</h3>
+                        <img src="img/24.png" alt="web_main" width="100%">
+                    </div>
+                    <div class="info-block" id="info3-8">
+                        <h3>HTML</h3>
+                        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;link rel="stylesheet" href="task3.css"&gt;
+        &lt;title&gt;Programming Courses&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="header"&gt;
+            &lt;br&gt;
+            &lt;h3&gt;ПОПУЛЯРНІ НАПРЯМКИ&lt;/h3&gt;
+            &lt;h2 class="orange"&gt;КУРСІВ ПРОГРАМУВАННЯ&lt;/h2&gt;
+            &lt;br&gt;
+            &lt;div class="flexbox"&gt;
+                &lt;div class="card"&gt;
+                    &lt;div class="card-info"&gt;
+                        &lt;br&gt;
+                        &lt;img src="task3img/js.bmp" alt="" height="50px"&gt;
+                        &lt;br&gt;
+                        &lt;span class="bluetext"&gt;Complex&lt;/span&gt;
+                        &lt;br&gt;
+                        &lt;br&gt;
+                        &lt;h3&gt;JAVASCRIPT&lt;/h3&gt;
+                        &lt;p class="orange"&gt;Комплексний курс&lt;/p&gt;
+                        &lt;br&gt;
+                        &lt;div class="left"&gt;
+                            &lt;p&gt;Стартовий рівень: початківець&lt;/p&gt;
+                            &lt;p&gt;Тривалість: 6-11 місяців&lt;/p&gt;
+                            &lt;p&gt;Ціна: від 14500 грн.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;br&gt;
+                        &lt;p class="bluetext"&gt;Залишилось 3 місця&lt;/p&gt;
+                        &lt;br&gt;
+                    &lt;/div&gt;
+                    &lt;a class="card-button"&gt;
+                        Детальніше
+                    &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="card"&gt;
+                    &lt;br&gt;
+                        &lt;img src="task3img/java.png" alt="" height="50px"&gt;
+                        &lt;br&gt;
+                        &lt;span class="bluetext"&gt;Complex&lt;/span&gt;
+                        &lt;br&gt;
+                        &lt;br&gt;
+                    &lt;h3&gt;JAVA&lt;/h3&gt;
+                    &lt;p class="orange"&gt;Комплексний курс&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;div class="left"&gt;
+                        &lt;p&gt;Стартовий рівень: початківець&lt;/p&gt;
+                        &lt;p&gt;Тривалість: 6-11 місяців&lt;/p&gt;
+                        &lt;p&gt;Ціна: від 14500 грн.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;p class="bluetext"&gt;Залишилось 6 місць&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;a class="card-button"&gt;
+                        Детальніше
+                    &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="card"&gt;
+                    &lt;br&gt;
+                        &lt;img src="task3img/python.png" alt="" height="50px"&gt;
+                        &lt;br&gt;
+                        &lt;span class="bluetext"&gt;Complex&lt;/span&gt;
+                        &lt;br&gt;
+                        &lt;br&gt;
+                    &lt;h3&gt;PYTHON&lt;/h3&gt;
+                    &lt;p class="orange"&gt;Комплексний курс&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;div class="left"&gt;
+                        &lt;p&gt;Стартовий рівень: початківець&lt;/p&gt;
+                        &lt;p&gt;Тривалість: 6-11 місяців&lt;/p&gt;
+                        &lt;p&gt;Ціна: від 14500 грн.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;p class="bluetext"&gt;Залишилось 4 місця&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;a class="card-button"&gt;
+                        Детальніше
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br&gt;&lt;br&gt;
+        &lt;/div&gt;
+        &lt;div class="blue"&gt;
+            &lt;img src="task3img/1.png" alt="1"&gt;
+            &lt;img src="task3img/2.png" alt="2"&gt;
+            &lt;img src="task3img/3.png" alt="3"&gt;
+            &lt;img src="task3img/4.png" alt="4"&gt;
+        &lt;/div&gt;
+        &lt;div class="white"&gt;
+            &lt;img src="task3img/5.jpg" alt="" width="40%"&gt;
+            &lt;div style="padding: 2%; align-items: center; width: 60%;"&gt;
+                &lt;h1 class="orange"&gt;ВІД НОВАЧКА ДО PRO-РОЗРОБНИКА&lt;/h1&gt;
+                &lt;br&gt;
+                &lt;div class="ad"&gt;
+                    &lt;h4&gt;
+                        Робота в IT - це високі зарплати, можливість віддаленої співпраці із закордонними компаніями
+                        і свобода вибору. Але є і мінуси. Низький старт - головний з них. Фахівцю без досвіду складно
+                        отримати робочий стаж, а зарплата коливається на рівні мінімальної.
+                        На курсах з інкубатором наші студенти отримують додаткових 5 місяців досвіду який так сильно
+                        вимагають роботодавці. З таким резюме ви станете бажаним кандидатом для будь-якої компанії.
+                    &lt;/h4&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;img src="task3img/footer.png" alt="footer" width="100%"&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                        </pre>
+                    </div>
+                    <div class="info-block" id="info3-9">
+                        <h3>CSS</h3>
+                        <pre>
+body, h3 {
+    font-family: 'Open+Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+}
+h1{
+    line-height: 30px;
+}
+.header{
+    background-color: #222;
+    text-align: center;
+    color: white
+}
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card {
+    background-color: #111;
+    border-radius: 25px;
+    width: 30%;
+    border: 2px solid #777777;
+}
+.left{
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+.card-button {
+    border-top: 1px solid #777777;
+    background-color: #222;
+    padding: 20px 0px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-decoration: none;
+}
+.blue{
+    padding: 2%;
+    background-color: rgb(0, 132, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.blue>img{
+    width: 23%;
+    border-radius: 5%;
+}
+.white{
+    display: flex;
+    justify-content: space-between;
+}
+.ad{
+    margin: 5%;
+    background-image: url('task3img/ad.jpg');
+    width: 80%;
+    height: 40%;
+    line-height: 25px;
+}
+.orange{
+    color: orange;
+}
+.bluetext{
+    color: rgb(0, 132, 255);
+}
+                        </pre>
+                    </div>
+                    <div class="info-block" id="info3-10">
+                        <h3>Таблична верстка VS Блочна верстка</h3>
+                        <p>
+                            Таблична верстка проста у використанні та сумісна зі старими браузерами,
+                            але має несемантичний код і важко масштабується. Блочна верстка забезпечує
+                            гнучкість та легкість управління, але може бути складною для новачків і мати
+                            проблеми зі старими браузерами.
+                        </p>
+                        <h3>FLEXBOX</h3>
+                        <p>
+                            Флексбокси пропонують веб-розробникам потужні можливості для створення адаптивних макетів,
+                            які легко налаштовуються під різні пристрої та розміри екранів. Цей інструмент дозволяє
+                            ефективно управляти розташуванням елементів, забезпечуючи при цьому гнучкість у дизайні.
+                            Незважаючи на деякі складнощі, пов’язані з сумісністю та управлінням простором у великих
+                            проектах, флексбокси залишаються надійним вибором для сучасного веб-дизайну, що підтримує
+                            доступність та зручність користувачів.
+                        </p>
+                    </div>
+
+                    <div class="info-block" id="info4-1">
+                        <h3>Тема: <span>АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ
+                                VIEWPORT. СТРАТЕГІЯ MOBILE FIRST.</span>
+                        </h3>
+                        <h3>Мета: <span>Адаптивна верстка. Медіа-запити.
+                                Медіа-типи. Медіа-функції.Метатег viewport.
+                                Інструменти розробника. Стратегія Mobile First.
+                            </span></h3>
+                    </div>
+                    <div class="info-block" id="info4-2">
+                        <h2>Адаптивна верстка</h2>
+                        <p>Це підхід до розробки веб-сайтів, який забезпечує
+                            коректне відображення сторінок на різних
+                            пристроях та розмірах екрану.</p>
+                        <h2>Медіа-запити</h2>
+                        <p>Це CSS-стилі, які змінюють стилізацію веб-сторінки
+                            залежно від розміру екрану, типу пристрою та
+                            інших параметрів відображення.</p>
+                        <h2>Медіа-типи</h2>
+                        <p>Це типи пристроїв, на які можна застосовувати
+                            медіа-запити, такі як екран, друк, проголошення
+                            тощо.</p>
+                        <h2>Медіа-функції</h2>
+                        <p>Це функції в CSS, які дозволяють отримувати
+                            інформацію про пристрій, на якому відображається
+                            сторінка, наприклад, розмір екрану, орієнтацію,
+                            дозвіл тощо.</p>
+                        <h2>Метатег viewport</h2>
+                        <p>Це HTML-метатег, який контролює масштабування та зону
+                            видимості веб-сторінки на екрані мобільного
+                            пристрою.</p>
+                        <h2>Інструменти розробника</h2>
+                        <p>Це набір інструментів, які браузери надають для
+                            допомоги розробникам у відлагодженні, аналізі та
+                            вдосконаленні веб-сайтів.</p>
+                        <h2>Стратегія Mobile First</h2>
+                        <p>Це підхід до розробки веб-сайтів, який передбачає
+                            розробку спочатку для мобільних пристроїв, а
+                            потім розширення функціоналу для більших
+                            екранів.</p>
+                    </div>
+                    <div class="info-block" id="info4-3">
+                        <h2>Створення десктопної версії</h2>
+                        <pre>
+@media (min-width: 992px) {
+    .channel-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+                        </pre>
+                        <img src="img/41.png" alt="lab4_desk">
+                    </div>
+                    <div class="info-block" id="info4-4">
+                        <h2>Створення планшетної версії</h2>
+                            <pre>
+@media (min-width: 768px) and (max-width: 991px) {
+    .channel-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+                            </pre>
+                        <img src="img/42.png" alt="lab4_desk">
+                    </div>
+                    <div class="info-block" id="info4-5">
+                        <h2>Створення мобільної версії</h2>
+                            <pre>
+@media (max-width: 767px) {
+    .channel-grid {
+        grid-template-columns: 1fr;
+    }
+}
+                            </pre>
+                        <img src="img/43.png" alt="lab4_desk">
+                    </div>
+                    <div class="info-block" id="info4-6">
+                        <h2>Висновок</h2>
+                        <p>
+                            Адаптивна верстка, яка включає в себе медіа-запити, медіа-типи та медіа-функції,
+                            є ключовим елементом сучасного веб-дизайну. Використання метатегу viewport та стратегії
+                            Mobile First дозволяє створювати веб-сайти, які ідеально відображаються на різних пристроях,
+                            від мобільних телефонів до настільних комп’ютерів. Це забезпечує користувачам
+                            зручність та оптимальний досвід перегляду, незалежно від їхнього вибору пристрою
+                        </p>
+                    </div>
+                    <div class="info-block" id="info5-1">
+                        <h3>Тема: <span>ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У
+                                HTML-ДОКУМЕНТІ.
+                                ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ
+                                ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT.
+                                ОБ'ЄКТ. МЕТОДИ ОБ'ЄКТА. МАСИВ
+                                ОБ'ЄКТІВ. ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ. CALLBACK.
+                                СТРІЛОЧНІ
+                                ФУНКЦІЇ. СТРІЛОЧНІ ФУНКЦІЇ ЯК
+                                КОЛБЕКИ.</span></h3>
+                        <h3>Мета: <span>Придбати практичні навички роботи з
+                                масивами у js-сценаріях. Реалізація програм
+                                засовами мови JAVASCRIPT.
+                                придбати практичні навички роботи з
+                                об'єктами. Методи об'єкта.. Callback. Стрілочні
+                                функції.
+                                Стрілочні функції як колбеки.
+                                Реалізація програм засовами мови JAVASCRIPT
+                            </span></h3>
+                        <h4>Залікова книжка: <span>№1423</span></h4>
+                    </div>
+                    <div class="info-block" id="info5-2">
+                        <h3>Схема URL</h3>
+                        <p>
+                            Схема URL в JavaScript визначає, яким чином браузер повинен обробляти
+                            певні ресурси. Наприклад, використання javascript: у схемі URL дозволяє
+                            виконувати JavaScript код безпосередньо з гіпертекстових посилань
+                        </p>
+                    </div>
+                    <div class="info-block" id="info5-3">
+                        <h3>Обробник подій</h3>
+                        <p>
+                            Обробник подій в JavaScript використовується для реагування на дії користувачів,
+                            такі як кліки мишею, натискання клавіш тощо. Ви можете додати обробник подій до
+                            будь-якого елемента DOM, використовуючи метод addEventListener()
+                        </p>
+                    </div>
+                    <div class="info-block" id="info5-4">
+                        <h3>Підстанова(entity)</h3>
+                        <p>
+                            Підстановка (entity) в JavaScript дозволяє працювати з HTML-ентітетами,
+                            які є способом представлення спеціальних символів у веб-документах.
+                            Наприклад, ви можете декодувати HTML-ентітети, щоб перетворити їх на відповідні символи
+                        </p>
+                    </div>
+                    <div class="info-block" id="info5-5">
+                        <h3>Вставка</h3>
+                        <p>
+                            Вставка (тег script) використовується для додавання JavaScript коду безпосередньо
+                            на HTML-сторінку або для підключення зовнішніх JavaScript файлів. Код може бути
+                            розміщений між відкриваючим і закриваючим тегами script, або можна вказати атрибут
+                            src для підключення зовнішнього файлу
+                        </p>
+                    </div>
+                    <div class=" info-block" id="info5-6">
+                        <h3>Масиви</h3>
+                        <p>Залікова №1423: 3 варіант</p>
+                        <h3>Завдання</h3>
+                        <img src="img/51.png" width="70%">
+                        <h3>Код</h3>
+                        <pre>
+function processArray() {
+    const arrayInput = document.getElementById("arrayInput").value;
+    let arrayA = arrayInput.split(',').map(num => parseFloat(num.trim()));
+
+    if (arrayA.some(isNaN)) {
+        alert("Переконайтеся, що всі введені значення є числами та розділені комами.");
+        return;
+    }
+
+    document.getElementById("inputArrayA").textContent = arrayA.join(", ");
+
+    const maxElement = Math.max(...arrayA);
+    const arrayB = arrayA.map(a => maxElement * a);
+
+    document.getElementById("outputArrayB").textContent = arrayB.join(", ");
+
+    insertionSortDescending(arrayB);
+    document.getElementById("sortedArrayB").textContent = arrayB.join(", ");
+}
+
+function insertionSortDescending(array) {
+    for (let i = 1; i < array.length; i++) {
+        let key = array[i];
+        let j = i - 1;
+
+        while (j >= 0 && array[j] < key) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = key;
+    }
+    return array;
+}
+                        </pre>
+                        <h3>Результат</h3>
+                        <label for="arrayInput">Введіть масив A (розділіть числа комою):</label>
+                        <input type="text" id="arrayInput">
+                        <button onclick="processArray()">Обробити масив</button>
+                        <br>
+                        <div id="results">
+                            <p><strong>Вхідний масив A:</strong></p>
+                            <div id="inputArrayA"></div>
+                    
+                            <p><strong>Вихідний масив B:</strong></p>
+                            <div id="outputArrayB"></div>
+                    
+                            <p><strong>Відсортований вихідний масив B за зменшенням:</strong></p>
+                            <div id="sortedArrayB"></div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="info-block" id="info5-7">
+                        <h3>Калькулятор</h3>
+                        <p>Залікова №1423: 3 варіант</p>
+                        <h3>Завдання</h3>
+                        <img src="img/52.png">
+                        <h3>Код</h3>
+                        <pre>
+const display = document.getElementById('display');
+
+function inputDigit(digit) {
+    display.innerText += digit;
+}
+
+function clearDisplay() {
+    display.innerText = '';
+}
+
+function calculate(operation) {
+    if (operation === '√') {
+        const currentValue = parseFloat(display.innerText);
+        display.innerText = Math.sqrt(currentValue);
+    } else {
+        display.innerText += operation;
+    }
+}
+
+function calculateResult() {
+    let expression = display.innerText;
+
+    expression = expression.replace(/\^/g, '**');
     
+    try {
+        const result = eval(expression);
+        display.innerText = result;
+    } catch (error) {
+        display.innerText = 'Error';
+    }
+}
+                        </pre>
+                        <h3>Результат</h3>
+                        <div class="calculator">
+                            <div id="display" class="display"></div>
+                            <div class="buttons">
+                                <button class="calcbutton" onclick="clearDisplay()">C</button>
+                                <button class="calcbutton" onclick="calculate('%')">%</button>
+                                <button class="calcbutton" onclick="calculate('^')">^</button>
+                                <button class="calcbutton" onclick="calculate('√')">√</button>
+                                <button class="calcbutton" onclick="calculate('/')">/</button>
+                                <button class="calcbutton" onclick="inputDigit('7')">7</button>
+                                <button class="calcbutton" onclick="inputDigit('8')">8</button>
+                                <button class="calcbutton" onclick="inputDigit('9')">9</button>
+                                <button class="calcbutton" onclick="calculate('*')">*</button>
+                                <button class="calcbutton" onclick="inputDigit('4')">4</button>
+                                <button class="calcbutton" onclick="inputDigit('5')">5</button>
+                                <button class="calcbutton" onclick="inputDigit('6')">6</button>
+                                <button class="calcbutton" onclick="calculate('-')">-</button>
+                                <button class="calcbutton" onclick="inputDigit('1')">1</button>
+                                <button class="calcbutton" onclick="inputDigit('2')">2</button>
+                                <button class="calcbutton" onclick="inputDigit('3')">3</button>
+                                <button class="calcbutton" onclick="calculate('+')">+</button>
+                                <button class="calcbutton" onclick="inputDigit('0')">0</button>
+                                <button class="calcbutton" onclick="inputDigit('.')">.</button>
+                                <button class="calcbutton" onclick="calculateResult()">=</button>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="info-block" id="info5-8">
+                        <h3>Завдання 1</h3>
+                        <img src="img/511.png">
+                        <h3>Код</h3>
+                        <pre>
+let productIdCounter = 1;
 
-    <p>Студент групи ІО-14</p>
-    <p>Риндя Ілля Андрійович</p>
-    <img src="img/photo.jpeg" alt="Фото студента" width=75px">
+function createProduct(obj, callback) {
+    obj.id = productIdCounter++;
+    callback(obj);
+}
 
-    <h3>Звіти</h3>
-    <ul>
-        <li><a href="lab1.html">Лабораторна робота №1</a></li>
-        <li><a href="lab2.html">Лабораторна робота №2</a></li>
-        <li><a href="lab3.html">Лабораторна робота №3</a></li>
-        <li><a href="lab4.html">Лабораторна робота №4</a></li>
-        <li><a href="lab5.html">Лабораторна робота №5</a></li>
-        <li><a href="lab51.html">Лабораторна робота №5.1</a></li>
-    </ul>
-</body>
-</html>
+function logProduct(product) {
+    const productOutput = document.getElementById('productOutput');
+    productOutput.textContent = JSON.stringify(product);
+}
+
+function logTotalPrice(product) {
+    const priceOutput = document.getElementById('priceOutput');
+    const totalPrice = product.price * product.quantity;
+    priceOutput.textContent = totalPrice;
+}
+
+const product1 = {
+    name: 'Телефон',
+    price: 500,
+    quantity: 2
+};
+
+const product2 = {
+    name: 'Планшет',
+    price: 300,
+    quantity: 3
+};
+
+createProduct(product1, logProduct);
+createProduct(product2, logTotalPrice);
+                        </pre>
+                        <h3>Результат</h3>
+                        <div>
+                            <label for="productOutput">Інформація про продукт:</label>
+                            <div id="productOutput"></div>
+                        </div>
+                        <div>
+                            <label for="priceOutput">Загальна вартість продукту:</label>
+                            <div id="priceOutput"></div>
+                        </div>
+                    </div>
+                    <div class="info-block" id="info5-9">
+                        <h3>Завдання 3</h3>
+                        <img src="img/513.png">
+                        <h3>Код</h3>
+                        <pre>
+const medicines = {
+    "Агалгін": new Date("2022-05-01"),
+    "Ношпа": new Date("2025-07-02"),
+    "Альфахолін": new Date("2024-12-21"),
+    "Аспірин": new Date("2022-08-15"),
+    "Аспаркам": new Date("2024-04-18"),
+};
+
+const today = new Date();
+
+const medicineNames = Object.keys(medicines);
+
+const validMedicines = medicineNames.filter(name => medicines[name] >= today);
+
+validMedicines.sort((a, b) => medicines[a] - medicines[b]);
+
+const resultContainer = document.getElementById("result-container");
+
+resultContainer.innerHTML = validMedicines.join(", ");
+                        </pre>
+                        <h3>Результат</h3>
+                        <div id="result-container3"></div>
+                    </div>
+                    <div class="info-block" id="info5-10">
+                        <h3>Завдання 5</h3>
+                        <img src="img/515.png">
+                        <h3>Код</h3>
+                        <pre>
+function applyDiscountAndAddID(fruits) {
+    return fruits.map((fruit, index) => ({
+        id: index + 1,
+        name: fruit.name,
+        price: fruit.price * 0.8
+    }));
+}
+
+const fruits = [
+    { name: "apple", price: 200 },
+    { name: "orange", price: 300 },
+    { name: "grapes", price: 750 },
+];
+
+const discountedFruits = applyDiscountAndAddID(fruits);
+
+const resultContainer5 = document.getElementById("result-container5");
+
+let resultHTML = "";
+discountedFruits.forEach(fruit => {
+    resultHTML += `ID: ${fruit.id}, Name: ${fruit.name}, Price: ${fruit.price.toFixed(2)};
+});
+
+resultContainer5.innerHTML = resultHTML;
+                        </pre>
+                        <h3>Резуьтат</h3>
+                        <div id="result-container5"></div>
+                    </div>
+                    <div class="info-block" id="info5-11">
+                        <h3>Завдання 7</h3>
+                        <img src="img/517.png">
+                        <h3>Код</h3>
+                        <pre>
+class Client {
+    #login;
+    #email;
+
+    constructor(login, email) {
+        this.#login = login;
+        this.#email = email;
+    }
+
+    get login() {
+        return this.#login;
+    }
+
+    set login(value) {
+        this.#login = value;
+    }
+
+    get email() {
+        return this.#email;
+    }
+
+    set email(value) {
+        this.#email = value;
+    }
+}
+
+const client = new Client("user123", "user@example.com");
+
+const resultContainer7 = document.getElementById("result-container7");
+resultContainer7.innerHTML = `Login: ${client.login}, Email: ${client.email}`;
+
+client.login = "newUser456";
+client.email = "newuser@example.com";
+
+resultContainer7.innerHTML += `Updated Login: ${client.login}, Updated Email: ${client.email}`;
+                        </pre>
+                        <h3>Результат</h3>
+                        <div id="result-container7"></div>
+                    </div>
+                    <div class="info-block" id="info5-12">
+                        <h3>Завдання 9</h3>
+                        <img src="img/519.png">
+                        <h3>Код</h3>
+                        <pre>
+const tweets = [
+    { id: "000", likes: 5, tags: ["js", "nodejs"] },
+    { id: "001", likes: 2, tags: ["html", "css"] },
+    { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+    { id: "003", likes: 8, tags: ["css", "react"] },
+    { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+];
+
+function countTags(tweets) {
+    const tagCounts = {};
+    
+    tweets.forEach(tweet => {
+        tweet.tags.forEach(tag => {
+            if (tagCounts[tag]) {
+                tagCounts[tag]++;
+            } else {
+                tagCounts[tag] = 1;
+            }
+        });
+    });
+    
+    return tagCounts;
+}
+
+const tagCounts = countTags(tweets);
+
+const resultContainer9 = document.getElementById("result-container9");
+resultContainer9.innerHTML = JSON.stringify(tagCounts);
+                        </pre>
+                        <h3>Результат</h3>
+                        <div id="result-container9"></div>
+                    </div>
+                    <div class="info-block" id="info5-13">
+                        <h3>Завдання 10</h3>
+                        <img src="img/5110.png">
+                        <h3>Код</h3>
+                        <pre>
+function checkBrackets(str) {
+    const stack = [];
+    const bracketsPairs = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    };
+    for (const char of str) {
+        if (char === '(' || char === '{' || char === '[') {
+            stack.push(char);
+        } else if (char === ')' || char === '}' || char === ']') {
+            if (stack.length === 0 || stack[stack.length - 1] !== bracketsPairs[char]) {
+                return false;
+            }
+            stack.pop();
+        }
+    }
+    return stack.length === 0;
+}
+
+const someFn = "function test() { let x = [1, 2, {a: (b)}]; }";
+const resultContainer10 = document.getElementById("result-container10");
+const isValid = checkBrackets(someFn);
+resultContainer10.innerHTML = isValid ? "True" : "False";
+                        </pre>
+                        <h3>Результат</h3>
+                        <div id="result-container10"></div>
+                    </div>
+                    <div class="info-block" id="info5-14">
+                        <h2>Висновок</h2>
+                        <p>
+                            У ході виконання роботи було успішно засвоєно практичні навички роботи з масивами
+                            та об’єктами у JavaScript. Були реалізовані програми, які демонструють використання
+                            методів об’єктів, а також застосування функцій зворотного виклику (callback).
+                            Особлива увага приділялася стрілочним функціям, їх синтаксису та ефективності як
+                            колбеків, що сприяло глибшому розумінню  функціональних
+                            особливостей мови JavaScript. Завдяки цьому досвіду, було досягнуто значного прогресу
+                            у вирішенні практичних завдань програмування.
+                        </p>
+                    </div>
+                    <div class="info-block" id="info6-1">
+                        <h3>Тема: <span>КЛАСИ. ОБ'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ.
+                            ОБ'ЄКТ ПОДІЇ. ДЕЛЕГУВАННЯ ПОДІЙ. THROTTLE. МОДУЛЬНОСТЬ КОДУ</span></h3>
+                        <h3>Мета: <span>придбати практичні навички роботи з об'єктами. Методи об'єкта.. Callback
+                            Стрілочні функції. Стрілочні функції як колбеки.
+                            Реалізація програм засовами мови JAVASCRIPT                            
+                            </span></h3>
+                        <h4>Залікова книжка: <span>№1423</span></h4>
+                    </div>
+                    <div class="info-block" id="info6-2">
+                        <h3>Завдання 1</h3>
+                        <img src="img/61.png">
+                        <h3>Код</h3>
+                        <pre>
+function showInputValue() {
+    var userInput = document.getElementById("userInput61").value;
+    console.log(userInput);
+}
+                        </pre>
+                        <h3>Результат</h3>
+                        <button onclick="showInputValue()">SHOW ME</button>
+                        <input type="text" id="userInput61">
+                    </div>
+                    <div class="info-block" id="info6-3">
+                        <h3>Завдання 3</h3>
+                        <img src="img/62.png">
+                        <h3>Код</h3>
+                        <pre>
+const passwordInput = document.getElementById('password63');
+const toggleButton = document.getElementById('toggleButton63');
+
+toggleButton.addEventListener('click', () => {
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        toggleButton.textContent = 'Приховати';
+    } else {
+        passwordInput.type = 'password';
+        toggleButton.textContent = 'Розкрити';
+    }
+});
+                        </pre>
+                        <h3>Результат</h3>
+                        <input type="text" id="password63" placeholder="пароль">
+                        <button id="toggleButton63">Приховати</button>
+                    </div>
+                    <div class="info-block" id="info6-4">
+                        <h3>Завдання 5</h3>
+                        <img src="img/63.png">
+                        <h3>Код</h3>
+                        <pre>
+window.addEventListener('dblclick', function(event) {
+    console.log(event.target.id === 'place');
+});                            
+                        </pre>
+                        <h3>Результат</h3>
+                        <div id="place" style="background-color: green; width: 100px; height: 200px;"></div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="info-block" id="info6-5">
+                        <h3>Завдання 7</h3>
+                        <div>
+                            <img src="img/641.png">
+                        </div>
+                        <div>
+                            <img src="img/642.png">
+                        </div>
+                        <h3>Код</h3>
+                        <pre>
+const categoriesList = document.querySelectorAll('#categories .item');
+console.log(`Кількість категорій: ${categoriesList.length}`);
+
+categoriesList.forEach(category => {
+    const categoryName = category.querySelector('h2').textContent;
+    const itemCount = category.querySelectorAll('li').length;
+    console.log(`Категорія: ${categoryName}`);
+    console.log(`Елементів: ${itemCount}`);
+});
+                        </pre>
+                        <h3>Результат</h3>
+                        <ul id="categories">
+                            <li class="item">
+                              <h2>Animals</h2>
+                              <ul>
+                                <li>Cat</li>
+                                <li>Hamster</li>
+                                <li>Horse</li>
+                                <li>Parrot</li>
+                              </ul>
+                            </li>
+                            <li class="item">
+                              <h2>Products</h2>
+                              <ul>
+                                <li>Bread</li>
+                                <li>Prasley</li>
+                                <li>Cheese</li>
+                              </ul>
+                            </li>
+                            <li class="item">
+                              <h2>Technologies</h2>
+                              <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Node.js</li>
+                              </ul>
+                            </li>
+                        </ul>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="info-block" id="info6-6">
+                        <h3>Завдання 8</h3>
+                        <img src="img/65.png">
+                        <h3>Код</h3>
+                        <pre>
+const loginForm = document.querySelector('.login-form');
+loginForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const emailInput = loginForm.elements.email;
+    const passwordInput = loginForm.elements.password;
+
+    if (!emailInput.value.trim() || !passwordInput.value.trim()) {
+        alert('All form fields must be filled in');
+        return;
+    }
+
+    const formData = {
+        email: emailInput.value.trim(),
+        password: passwordInput.value.trim()
+    };
+
+    console.log(formData);
+    loginForm.reset();
+});
+                        </pre>
+                        <h3>Результат</h3>
+                        <form class="login-form">
+                            <div>
+                                Email
+                                <input type="email" name="email" />
+                            </div>
+                            <br>
+                            <div>
+                                Password
+                                <input type="password" name="password" />
+                            </div>
+                            <br>
+                            <button type="submit">Log in</button>
+                        </form>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="info-block" id="info6-7">
+                        <h3>Завдання 9</h3>
+                        <img src="img/66.png">
+                        <h3>Код</h3>
+                        <pre>
+function getRandomHexColor() {
+    return `#${Math.floor(Math.random() * 16777215)
+        .toString(16)
+        .padStart(6, '0')}`;
+}
+
+const changeColorButton = document.querySelector('.change-color');
+const bodyElement = document.body;
+
+changeColorButton.addEventListener('click', () => {
+    const randomColor = getRandomHexColor();
+    bodyElement.style.backgroundColor = randomColor;
+});
+                        </pre>
+                        <h3>Результат</h3>
+                        <button type="button" class="change-color">Change color</button>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="info-block" id="info6-8">
+                        <h3>Завдання 10</h3>
+                        <div>
+                            <img src="img/671.png">
+                        </div>
+                        <div>
+                            <img src="img/672.png">
+                        </div>
+                        <h3>Код</h3>
+                        <pre>
+const input = document.getElementById('input10');
+const createButton = document.querySelector('[data-create]');
+const destroyButton = document.querySelector('[data-destroy]');
+const boxesContainer = document.querySelector('#boxes');
+
+function createBoxes(amount) {
+    for (let i = 0; i < amount; i++) {
+    const box = document.createElement('div');
+    box.style.width = `${30 + i * 10}px`;
+    box.style.height = `${30 + i * 10}px`;
+    box.style.backgroundColor = getRandomHexColor();
+    boxesContainer.appendChild(box);
+    }
+}
+
+createButton.addEventListener('click', () => {
+    const amount = parseInt(input.value, 10);
+    if (amount >= 1 && amount <= 100) {
+    createBoxes(amount);
+    input.value = '';
+    } else {
+    alert('Введіть число від 1 до 100.');
+    }
+});
+
+destroyButton.addEventListener('click', () => {
+    boxesContainer.innerHTML = '';
+});
+                        </pre>
+                        <h3>Результат</h3>
+                        <div id="controls">
+                            <input type="number" min="1" max="100" step="1" id="input10">
+                            <button type="button" data-create>Create</button>
+                            <button type="button" data-destroy>Destroy</button>
+                        </div>
+                        <div id="boxes"></div>  
+                        <br>
+                        <br>                      
+                    </div>
+                    <div class="info-block" id="info6-9">
+                        <h2>Висновок</h2>
+                        <p>
+                            У ході виконання роботи було успішно засвоєно практичні навички роботи з масивами
+                            та об’єктами у JavaScript. Були реалізовані програми, які демонструють використання
+                            методів об’єктів, а також застосування функцій зворотного виклику (callback).
+                            Особлива увага приділялася стрілочним функціям, їх синтаксису та ефективності як
+                            колбеків, що сприяло глибшому розумінню  функціональних
+                            особливостей мови JavaScript. Завдяки цьому досвіду, було досягнуто значного прогресу
+                            у вирішенні практичних завдань програмування.
+                        </p>
+                    </div>
+                    <div class="info-block" id="info7-1">
+                        <h3>Тема: <span>WEB-СХОВИЩЕ. WEB STORAGE API. МОДУЛЬНОСТЬ  КОДУ.
+                            СТВОРЕННЯ МОДАЛЬНОГО ВІКНА. ДЕЛЕГУВАННЯ ПОДІЙ.</span>
+                        </h3>
+                        <h3>Мета: <span>придбати практичні навички роботи створення модального вікна;
+                            повторити процес створення макету, зокрема створення макету галереї довільних
+                            зображень; закріпити навички роботи з делегуванням подій.</span>
+                        </h3>
+                    </div>
+                    <div class="info-block" id="info7-2">
+                        <h2>Сторінка лабораторної роботи</h2>
+                        <a href="https://uiika.github.io/WEB-technologies-lab7/">https://uiika.github.io/WEB-technologies-lab7/</a>
+                    </div>
+                    <div class="info-block" id="info7-3">
+                        <h2>Висновок</h2>
+                        <p>
+                            У ході виконання роботи було придбано практичні навички роботи створення модального вікна;
+                            повторино процес створення макету, зокрема створення макету галереї довільних
+                            зображень; закріпдено навички роботи з делегуванням подій.
+                        </p>
+                    </div>
+                    <div class="info-block" id="info8-1">
+                        <a href="https://coursera.org/share/781e7000dcf13f25ecce23ae743aac8d">https://coursera.org/share/781e7000dcf13f25ecce23ae743aac8d</a>
+
+                        <div>
+                            <img src="img/81.png" alt="sectificate">
+                        </div>
+                        <div>
+                            <img src="img/82.png" alt="grade">
+                        </div>
+                    </div>
+                    <div class="info-block" id="info8-2">
+                        <div>
+                            <img src="img/831.png">
+                        </div>
+                        <div>
+                            <img src="img/832.png">
+                        </div>
+                        <div>
+                            <img src="img/833.png">
+                        </div>
+                    </div>
+                    <div class="info-block" id="info8-3">
+                        <div>
+                            <img src="img/841.png">
+                        </div>
+                        <div>
+                            <img src="img/842.png">
+                        </div>
+                        <div>
+                            <img src="img/843.png">
+                        </div>
+                    </div>
+                    <div class="info-block" id="info8-4">
+                        <div>
+                            <img src="img/851.png">
+                        </div>
+                        <div>
+                            <img src="img/852.png">
+                        </div>
+                        <div>
+                            <img src="img/853.png">
+                        </div>
+                    </div>
+                    <div class="info-block" id="info9-1">
+                        <a href="https://coursera.org/share/2ee6efa907e74589e92544d86659a708">https://coursera.org/share/2ee6efa907e74589e92544d86659a708</a>
+                        <div>
+                            <img src="img/91.png" alt="sectificate">
+                        </div>
+                        <div>
+                            <img src="img/92.png" alt="grade">
+                        </div>
+                    </div>
+                    <div class="info-block" id="info9-2">
+                        <div>
+                            <img src="img/931.png">
+                        </div>
+                        <div>
+                            <img src="img/932.png">
+                        </div>
+                        <div>
+                            <img src="img/933.png">
+                        </div>
+                        <div>
+                            <img src="img/934.png">
+                        </div>
+                    </div>
+                    <div class="info-block" id="info9-3">
+                        <div>
+                            <img src="img/941.png">
+                        </div>
+                        <div>
+                            <img src="img/942.png">
+                        </div>
+                        <div>
+                            <img src="img/943.png">
+                        </div>
+                        <div>
+                            <img src="img/944.png">
+                        </div>
+                        <div>
+                            <img src="img/945.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+            function showLab(labNumber) {
+                const labBlocks = document.querySelectorAll('.lab-block');
+                const infoBlocks = document.querySelectorAll('.info-block');
+                labBlocks.forEach(block => {
+                    block.classList.remove('active');
+                });
+                infoBlocks.forEach(block => {
+                    block.classList.remove('active');
+                });
+                document.getElementById('lab' + labNumber).classList.add('active');
+            }
+
+            function showInfo(infoNumber, contentNumber) {
+                const infoBlocks = document.querySelectorAll('.info-block');
+                infoBlocks.forEach(block => {
+                    block.classList.remove('active');
+                });
+                document.getElementById(`info${infoNumber}-${contentNumber}`).classList.add('active');
+            }
+
+            function showSubsection(subsectionNumber) {
+                const subsection = document.getElementById('subsection' + subsectionNumber);
+
+                if (subsection.classList.contains('active')) {
+                    subsection.classList.remove('active');
+                } else {
+                    const subsections = document.querySelectorAll('.subsection');
+                    subsections.forEach(subsection => {
+                        subsection.classList.remove('active');
+                    });
+                    subsection.classList.add('active');
+                }
+            }
+            </script>
+            <script src="lab5.js"></script>
+            <script src="lab51.js"></script>
+            <script src="lab6.js"></script>
+        </body>
+
+    </html>

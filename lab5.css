@@ -18,7 +18,7 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-button {
+.calcbutton {
     padding: 10px;
     font-size: 18px;
     border: 1px solid #ccc;
@@ -26,6 +26,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.calcbutton:hover {
     background-color: #e0e0e0;
 }
