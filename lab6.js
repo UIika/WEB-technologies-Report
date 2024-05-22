@@ -86,6 +86,7 @@ const bodyElement = document.body;
 changeColorButton.addEventListener('click', () => {
     const randomColor = getRandomHexColor();
     bodyElement.style.backgroundColor = randomColor;
+    document.getElementById('colorLabel').textContent = `Колір: ${randomColor}`;
 });
 
 
